@@ -25,7 +25,7 @@ public sealed class GalleryUI : MonoBehaviour
     public void Initialize(EvidenceJournal evidence)
     {
         journal = evidence;
-        font = Resources.GetBuiltinResource<Font>("Arial.ttf");
+        font = Resources.GetBuiltinResource<Font>("LegacyRuntime.ttf");
         new GameObject("UI Event System", typeof(EventSystem), typeof(StandaloneInputModule));
         BuildCanvas();
         Show(Screen.Gameplay);
